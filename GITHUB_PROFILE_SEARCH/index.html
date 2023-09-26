@@ -57,12 +57,12 @@
       crossorigin="anonymous"
     ></script>
     <script type="module">
-      import { fetchGitHubData } from "./main.js";
+      import {getUserDetails} from "./main.js";
       function handleKeyPress(event){
         if(event.key ==="Enter"){
             event.preventDefault();
             const inputText = event.target.value;
-            fetchGitHubData(inputText);
+            getUserDetails(inputText);
         }
       }
       //attaching event listener 
