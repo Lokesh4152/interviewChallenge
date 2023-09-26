@@ -1,0 +1,38 @@
+#form{
+    margin-top: 25vh;
+    
+}
+#card-detail p {
+     display: inline
+ }
+
+
+.card{
+    background-color: rgb(111, 109, 109) !important;
+    color: white !important;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circular-image-container {
+    border: 6px solid white; /* White border */
+    border-radius: 70%; /* Create a circular shape */
+    overflow: hidden; /* Hide any content outside the circle */
+    /* max-width: 50%; */
+    height: auto;
+    display: block;
+    margin-top: 15px ;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    
+}
+
+/* Set the image as the background */
+.circular-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
