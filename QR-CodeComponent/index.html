@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Include the 'Outfit' font from Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: rgba(213,225,239,255);
+    }
+
+    .qr-container {
+      border: 2px solid rgb(252, 252, 252);
+      border-radius: 1rem;
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+    }
+
+    .qr-box {
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .qr-description {
+      font-size: 15px;
+      color:     rgb(167,172,172) ;
+      text-align: center;
+    }
+
+    h3 {
+      color: rgb(58, 76, 94);
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    #qrcode {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; /* This will round the corners of the image slightly */
+    }
+
+    /* Media Queries for Mobile Screens */
+    @media (max-width: 576px) {
+      .qr-container {
+        border-radius: 0.5rem;
+      }
+
+      .qr-box {
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4 qr-container">
+      <div class="qr-box d-flex justify-content-center align-items-center">
+        <img src="./images/image-qr-code.png" alt="QR Code" id="qrcode" />
+      </div>
+      <h3>Improve your front-end skills by doing projects</h3>
+      <p class="qr-description">
+        Scan the QR to visit the Frontend Mentor and increase the frontend
+        skills to the new level.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
