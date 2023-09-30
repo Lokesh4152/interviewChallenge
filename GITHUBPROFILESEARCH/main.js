@@ -29,7 +29,7 @@ function createUserCard(data) {
   document.getElementById("card-username").textContent = data.name;
   document.getElementById("card-bio").textContent = data.bio;
   document.getElementById("followers").innerHTML = `Followers: ${data.followers}`;
-  document.getElementById("following").innerHTML = `Following: ${data.following}`;
+  document.getElementById("following").innerHTML = `&nbsp Following: ${data.following}`;
   document.getElementById("repos").innerHTML = `Repos: ${data.public_repos}`;
   document.getElementById("twitter").innerHTML = `Twitter: ${data.twitter_username}`;
   document.getElementById("location").innerHTML = `Location: ${data.location}`;

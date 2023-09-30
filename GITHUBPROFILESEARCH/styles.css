@@ -2,6 +2,9 @@
     margin-top: 25vh;
     
 }
+.extraspace{
+    margin-right: 50px;
+}
 #card-detail p {
      display: inline
  }
